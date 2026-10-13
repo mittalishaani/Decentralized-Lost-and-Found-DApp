@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lost & Found DApp</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lost & Found</h1>
+        <p>Decentralized Campus Lost & Found System</p>
+
+        <button id="connectWallet">
+            Connect MetaMask
+        </button>
+
+        <p id="walletAddress">Wallet not connected</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Report a Lost Item</h2>
+
+            <form id="reportForm">
+                <label for="itemName">Item Name</label>
+                <input
+                    type="text"
+                    id="itemName"
+                    placeholder="e.g. Calculator"
+                    required
+                >
+
+                <label for="itemDescription">
+                    Description
+                </label>
+                <textarea
+                    id="itemDescription"
+                    placeholder="Where did you lose it?"
+                    rows="4"
+                ></textarea>
+
+                <button type="submit">
+                    Report Item
+                </button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Reported Items</h2>
+
+            <button id="refreshItems">
+                Refresh Items
+            </button>
+
+            <div id="itemsList">
+                <p>No items loaded yet.</p>
+            </div>
+        </section>
+
+        <p id="statusMessage" role="status"></p>
+    </main>
+
+    <footer>
+        <p>Blockchain Technology IA2 Project</p>
+    </footer>
+</body>
+</html>

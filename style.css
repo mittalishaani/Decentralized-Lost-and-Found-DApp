@@ -1,0 +1,136 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #243047;
+}
+
+header {
+    background: #243b67;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #dce6f8;
+}
+
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-top: 0;
+    color: #243b67;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+button {
+    background: #3166cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #214fa6;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+#connectWallet {
+    background: #f5a623;
+    color: #172033;
+}
+
+#connectWallet:hover {
+    background: #e89713;
+}
+
+.item {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+.item p {
+    overflow-wrap: anywhere;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.recovered {
+    color: green;
+}
+
+.lost {
+    color: #c2410c;
+}
+
+#statusMessage {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
